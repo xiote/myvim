@@ -1,3 +1,8 @@
+augroup Prettier
+  autocmd!
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.yaml,*.html noautocmd | call prettier#Autoformat()
+augroup end
+
 " NOTE The previous two options can be used together for autoformatting files on save without @format or @prettier tags
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
