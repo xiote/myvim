@@ -14,13 +14,13 @@ let g:prettier#config#print_width = 'auto'
 " number of spaces per indentation level: a number or 'auto' (use
 " softtabstop)
 " default: 'auto'
-let g:prettier#config#tab_width = 'auto'
-" let g:prettier#config#tab_width = '2'
+" let g:prettier#config#tab_width = 'auto'
+let g:prettier#config#tab_width = '4'
 
 " use tabs instead of spaces: true, false, or auto (use the expandtab setting).
 " default: 'auto'
-let g:prettier#config#use_tabs = 'auto'
-" let g:prettier#config#use_tabs = 'false'
+"let g:prettier#config#use_tabs = 'auto'
+let g:prettier#config#use_tabs = 'false'
 
 " flow|babylon|typescript|css|less|scss|json|graphql|markdown or empty string
 " (let prettier choose).
