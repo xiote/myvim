@@ -25,7 +25,8 @@ let g:prettier#config#use_tabs = 'false'
 " flow|babylon|typescript|css|less|scss|json|graphql|markdown or empty string
 " (let prettier choose).
 " default: ''
-let g:prettier#config#parser = ''
+" json skip
+let g:prettier#config#parser = 'flow|babylon|typescript|css|less|scss|graphql|markdown'
 
 " cli-override|file-override|prefer-file
 " default: 'file-override'
