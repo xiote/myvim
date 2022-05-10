@@ -15,8 +15,9 @@ cabbre qq q!
 " Disable visual mode on mouse select for vim
 set mouse-=a
 
-" Window change
+" Window change w
 cabbre ww wincmd w
+
 
 " https://vim.fandom.com/wiki/Insert_newline_without_entering_insert_mode
 nmap o o<Esc>
@@ -27,3 +28,13 @@ set autochdir
 
 " 검색단어 타이핑하는 도중 Highlight 중지
 set noincsearch
+
+" pwd redifine <현재 파일을 확인할때도 쓴다.>
+cabbre pwd echo expand('%:p')
+
+" Scroll offset to 0
+set scrolloff=0
+
+" Go to center
+imap <C-x> <c-o>
+nmap <C-x> zz
