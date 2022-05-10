@@ -1,11 +1,11 @@
-augroup Prettier
-  autocmd!
-  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.yaml,*.html noautocmd | call prettier#Autoformat()
-augroup end
-
 " NOTE The previous two options can be used together for autoformatting files on save without @format or @prettier tags
-let g:prettier#autoformat = 1
+" let g:prettier#autoformat = 1
+" let g:prettier#autoformat_require_pragma = 0
+
+" skip json
+let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
 
 " Overwrite default prettier configuration
 " 
@@ -30,8 +30,7 @@ let g:prettier#config#use_tabs = 'false'
 " flow|babylon|typescript|css|less|scss|json|graphql|markdown or empty string
 " (let prettier choose).
 " default: ''
-" json skip
-let g:prettier#config#parser = 'flow|babylon|typescript|css|less|scss|graphql|markdown'
+let g:prettier#config#parser = ''
 
 " cli-override|file-override|prefer-file
 " default: 'file-override'
