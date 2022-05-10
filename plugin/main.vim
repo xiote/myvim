@@ -16,3 +16,15 @@ nmap O O<Esc>
 
 " 열린 파일에 맞춰서 자동으로 경로 변경
 set autochdir
+
+" AutoClose
+inoremap () ()
+inoremap ( ()<left>
+inoremap ' ''<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+" Show gutter 
+" set signcolumn=yes
