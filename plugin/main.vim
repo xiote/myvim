@@ -38,3 +38,10 @@ set scrolloff=0
 " Go to center
 imap <C-x> <c-o>
 nmap <C-x> zz
+
+" Open quickfix window without focusing it
+" https://vi.stackexchange.com/questions/16804/open-quickfix-window-without-focusing-it
+" augroup quickfix
+"   autocmd!
+"   autocmd Syntax qf wincmd p
+" augroup END

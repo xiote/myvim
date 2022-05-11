@@ -52,3 +52,6 @@ let g:prettier#config#require_pragma = 'false'
 " lf|crlf|cr|all
 " defaut: 'lf'
 let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
+
+" Single quote
+let g:prettier#config#single_quote = 'true' 
