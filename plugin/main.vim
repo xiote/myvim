@@ -39,9 +39,14 @@ set scrolloff=0
 imap <C-x> <c-o>
 nmap <C-x> zz
 
+" Quickfix 관련 시행착오
+" 범인은 vim-prettier 였음
 " Open quickfix window without focusing it
 " https://vi.stackexchange.com/questions/16804/open-quickfix-window-without-focusing-it
-" augroup quickfix
-"   autocmd!
-"   autocmd Syntax qf wincmd p
-" augroup END
+" https://soooprmx.com/vim의-autocmd-이벤트들/
+" https://vi.stackexchange.com/questions/14065/autocmd-with-quickfix-window
+" autocmd WinEnter * if &buftype == 'quickfix' | echom 'winenter' | endif
+" autocmd BufWinEnter * if &buftype == 'quickfix' | bd | endif
+" autocmd!
+" autocmd QuickFixCmdPre * let g:mybufname=bufname('%')
+" autocmd QuickFixCmdPost * botright copen 8 | exec bufwinnr(g:mybufname) . 'wincmd w'

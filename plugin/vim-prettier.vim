@@ -1,11 +1,14 @@
-" NOTE The previous two options can be used together for autoformatting files on save without @format or @prettier tags
-" let g:prettier#autoformat = 1
-" let g:prettier#autoformat_require_pragma = 0
-
-" skip json
-let g:prettier#autoformat = 0
-let g:prettier#autoformat_require_pragma = 0
+" auto format (skip json)
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync
+
+" Quickfix show and not focus
+
+" By default parsing errors will open the quickfix but can also be disabled
+" Confict with ale
+" let g:prettier#quickfix_enabled  = 0
+
+" By default we auto focus on the quickfix when there are errors but can also be disabled
+let g:prettier#quickfix_auto_focus = 0
 
 " Overwrite default prettier configuration
 " 
@@ -55,3 +58,4 @@ let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
 
 " Single quote
 let g:prettier#config#single_quote = 'true' 
+
