@@ -1,6 +1,9 @@
-" Ctrl+I to : <with karabiner>
-imap <C-q> <Esc>:
-nmap <C-q> :
+" " Ctrl+I to : <with karabiner>
+" imap <C-q> <Esc>:
+" nmap <C-q> :
+"
+imap <C-w> <Esc>:
+nmap <C-w> :
 
 " End of line
 imap <C-e> <c-o>A
@@ -38,6 +41,9 @@ set scrolloff=0
 " Go to center
 imap <C-x> <c-o>
 nmap <C-x> zz
+
+" 검색시, 키워드가 더이상없는 경우, 맨앞에서부터 검색되지 않도록
+set nowrapscan
 
 " Quickfix 관련 시행착오
 " 범인은 vim-prettier 였음
