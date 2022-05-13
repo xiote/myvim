@@ -56,6 +56,7 @@ let g:prettier#config#require_pragma = 'false'
 " defaut: 'lf'
 let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
 
+" 일반적인 언어대로 쌍따옴표를 쓰는 것으로 함
 " Single quote
-let g:prettier#config#single_quote = 'true' 
+" let g:prettier#config#single_quote = 'true' 
 
