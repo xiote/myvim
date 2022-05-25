@@ -2,6 +2,16 @@
 " imap <C-q> <Esc>:
 " nmap <C-q> :
 "
+" use OS clipboard"
+set clipboard=unnamed 
+
+" MacVim Disable all blinking:
+:set guicursor+=a:blinkon0
+
+" MacVim Font
+set guifont=Menlo:h18
+
+" 커맨드모드 진입
 imap <C-w> <Esc>:
 nmap <C-w> :
 
