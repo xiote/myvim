@@ -2,14 +2,15 @@
 " imap <C-q> <Esc>:
 " nmap <C-q> :
 "
-" use OS clipboard"
-set clipboard=unnamed 
 
 " MacVim Disable all blinking:
 :set guicursor+=a:blinkon0
 
 " MacVim Font
-set guifont=Menlo:h18
+set guifont=Menlo:h26
+
+" Default working directiory
+cd /Users/xiote/github.com/xiote/notes
 
 " 커맨드모드 진입
 imap <C-w> <Esc>:
