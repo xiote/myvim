@@ -3,6 +3,9 @@
 " nmap <C-q> :
 "
 
+" yank to clipboard in mac
+set clipboard=unnamed
+
 " MacVim Disable all blinking:
 :set guicursor+=a:blinkon0
 
