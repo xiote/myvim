@@ -12,10 +12,6 @@ set guifont=Menlo:h26
 " Default working directiory
 cd /Users/xiote/github.com/xiote/notes
 
-" 커맨드모드 진입
-imap <C-w> <Esc>:
-nmap <C-w> :
-
 " End of line
 imap <C-e> <c-o>A
 nmap <C-e> $
