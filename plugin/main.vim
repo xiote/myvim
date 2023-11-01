@@ -61,6 +61,9 @@ nmap <C-x> zz
 " 검색시, 키워드가 더이상없는 경우, 맨앞에서부터 검색되지 않도록
 set nowrapscan
 
+" >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
+set shiftwidth=3
+
 " Quickfix 관련 시행착오
 " 범인은 vim-prettier 였음
 " Open quickfix window without focusing it
