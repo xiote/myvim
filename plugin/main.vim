@@ -64,6 +64,9 @@ set nowrapscan
 " >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
 set shiftwidth=3
 
+" yank to system register
+vmap <C-y> "+y
+
 " Quickfix 관련 시행착오
 " 범인은 vim-prettier 였음
 " Open quickfix window without focusing it
