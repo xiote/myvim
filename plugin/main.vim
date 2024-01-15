@@ -3,6 +3,10 @@
 " nmap <C-q> :
 "
 
+" encoding
+set encoding=utf-8
+set fileencodings=utf-8,cp949
+
 " yank to system register
 vmap <C-y> "+y
 
