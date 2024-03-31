@@ -69,7 +69,7 @@ set nowrapscan
 set shiftwidth=3
 
 " yank to system register
-vmap <C-y> "+y
+" vmap <C-y> "+y
 
 " Quickfix 관련 시행착오
 " 범인은 vim-prettier 였음
