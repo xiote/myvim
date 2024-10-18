@@ -1,5 +1,5 @@
 " plugin
-packadd comment
+" packadd comment
 
 " " Ctrl+I to : <with karabiner>
 " imap <C-q> <Esc>:
@@ -11,7 +11,7 @@ set encoding=utf-8
 set fileencodings=utf-8,cp949
 
 " yank to system register
-vmap <C-y> "+y
+" vmap <C-y> "+y
 
 " MacVim Disable all blinking:
 :set guicursor+=a:blinkon0
