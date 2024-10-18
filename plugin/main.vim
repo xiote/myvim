@@ -82,3 +82,5 @@ set shiftwidth=3
 " autocmd!
 " autocmd QuickFixCmdPre * let g:mybufname=bufname('%')
 " autocmd QuickFixCmdPost * botright copen 8 | exec bufwinnr(g:mybufname) . 'wincmd w'
+
+packadd comment
