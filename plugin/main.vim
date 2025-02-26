@@ -19,7 +19,6 @@ set fileencodings=utf-8,cp949
 
 " yank to system register
 " vmap <C-y> "+y
->>>>>>> 5a19552a5882a77b39dce8c90c43806106c88ab2
 
 " MacVim Disable all blinking:
 set guicursor+=a:blinkon0
