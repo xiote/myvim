@@ -3,8 +3,14 @@
 " nmap <C-q> :
 "
 
+" hide rownumber
+set nonumber
+
+" hide colorcolumn (on pymode)
+set colorcolumn=
+
 " MacVim Disable all blinking:
-:set guicursor+=a:blinkon0
+set guicursor+=a:blinkon0
 
 " MacVim Font
 set guifont=Menlo:h26
