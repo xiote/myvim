@@ -1,20 +1,33 @@
+" plugin
+" packadd comment
+
 " " Ctrl+I to : <with karabiner>
 " imap <C-q> <Esc>:
 " nmap <C-q> :
 "
 
+" hide rownumber
+set nonumber
+
+" hide colorcolumn (on pymode)
+set colorcolumn=
+
+
+" encoding
+set encoding=utf-8
+set fileencodings=utf-8,cp949
+
+" yank to system register
+" vmap <C-y> "+y
+
 " MacVim Disable all blinking:
-:set guicursor+=a:blinkon0
+set guicursor+=a:blinkon0
 
 " MacVim Font
 set guifont=Menlo:h26
 
 " Default working directiory
-cd /Users/xiote/github.com/xiote/notes
-
-" 커맨드모드 진입
-imap <C-w> <Esc>:
-nmap <C-w> :
+" cd /Users/xiote/github.com/xiote/notes
 
 " End of line
 imap <C-e> <c-o>A
@@ -61,6 +74,12 @@ nmap <C-x> zz
 
 " 검색시, 키워드가 더이상없는 경우, 맨앞에서부터 검색되지 않도록
 set nowrapscan
+
+" >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
+set shiftwidth=3
+
+" yank to system register
+" vmap <C-y> "+y
 
 " Quickfix 관련 시행착오
 " 범인은 vim-prettier 였음
