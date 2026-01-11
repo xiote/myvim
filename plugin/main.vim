@@ -92,3 +92,10 @@ set shiftwidth=3
 " autocmd!
 " autocmd QuickFixCmdPre * let g:mybufname=bufname('%')
 " autocmd QuickFixCmdPost * botright copen 8 | exec bufwinnr(g:mybufname) . 'wincmd w'
+
+" Column count function
+function! ColumnCount()
+    echo len(split(getline('.')))
+endfunction
+
+command! ColumnCount call ColumnCount()
