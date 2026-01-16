@@ -98,4 +98,4 @@ function! ColumnCount()
     echo len(split(getline('.')))
 endfunction
 
-command! ColumnCount call ColumnCount()
+command! ColCount call ColumnCount()
