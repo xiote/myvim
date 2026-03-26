@@ -99,3 +99,5 @@ function! ColumnCount()
 endfunction
 
 command! ColumnCount call ColumnCount()
+
+autocmd FileType python let g:pyindent_open_paren = 'shiftwidth()' | let g:pyindent_continue = 'shiftwidth()'
