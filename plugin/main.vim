@@ -33,7 +33,8 @@ set guifont=Menlo:h26
 imap <C-e> <c-o>A
 nmap <C-e> $
 
-" Ahead of line
+" 줄 맨 앞으로 이동
+inoremap <C-a> <Home>
 nmap <C-a> 0
 
 " Quit anyway
